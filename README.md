@@ -20,7 +20,7 @@ sudo apt-get install texlive-xetex
 
 # How to use 
 
-First,just clone it
+First, just clone it
 
 ```
 git clone https://github.com/YTLogos/CV.git
@@ -31,6 +31,6 @@ and then go into the dir CV and change the contents. Final you use Tex
 xelatex {your_CV_name}.tex
 ```
 
-and then you will get the pdf file:{your_CV_name}.pdf!So gook luck!
+and then you will get the pdf file:{your_CV_name}.pdf! So gook luck!
 
 
