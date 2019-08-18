@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.1.13)  18 MAY 2019 11:52
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.1.13)  18 AUG 2019 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1243,6 +1243,9 @@ LaTeX Info: Redefining \nameref on input line 25.
 \openout6 = `awesome-cv-yt.out'.
 
 
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 ABD: EveryShipout initializing macros
 Underfull \hbox (badness 10000) in paragraph at lines 27--27
 
@@ -1286,10 +1289,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
  ) 
 Here is how much of TeX's memory you used:
- 34679 strings out of 493007
- 693730 string characters out of 6136719
- 817594 words of memory out of 5000000
- 38239 multiletter control sequences out of 15000+600000
+ 34678 strings out of 493007
+ 693728 string characters out of 6136719
+ 817479 words of memory out of 5000000
+ 38238 multiletter control sequences out of 15000+600000
  530824 words of font info for 47 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  62i,8n,87p,10462b,860s stack positions out of 5000i,500n,10000p,200000b,80000s
