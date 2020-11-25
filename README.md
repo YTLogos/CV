@@ -1,36 +1,20 @@
-# About
-My CV, based on darwiin's style and CV: https://github.com/darwiin/yaac-another-awesome-cv
+## My pagedown rendered CV
 
-You can see my CV from [here](https://taoyan.netlify.com/files/cv.pdf)
+This repo contains the source-code and results of my CV built with the [pagedown package](https://pagedown.rbind.io) and a modified version of the 'resume' template. 
 
-# Requiremwnts
+The main files are:
 
-This latest CV template uses luatex engine and need [fontawesome Package version 4.6.3.2.](https://ctan.org/tex-archive/fonts/fontawesome) or higher version. This CV template contains fontawesome Package version 4.6.3.2., so you just need install Tex and clone it to your computer.
-
-## on Ubuntu
-
-for Ubuntu 18.04 LTS I did:
-
-```
-sudo apt-get install texlive-full
-sudo apt-get install texlive-xetex
-```
-
- Note that texlive-full will take a long time to install, maybe few hours. It is possible that you will encount many problems and It will not work well but I just went ahead and did everything. If you encount some errors or warnings, it's Ok, Just Google It.
-
-# How to use 
-
-First, just clone it
-
-```
-git clone https://github.com/YTLogos/CV.git
-```
-and then go into the dir CV and change the contents. Final you use Tex 
-
-```
-xelatex {your_CV_name}.tex
-```
-
-and then you will get the pdf file:{your_CV_name}.pdf! So gook luck!
+- `index.Rmd`: Source template for the cv, contains a variable `PDF_EXPORT` in the header that changes styles for pdf vs html. 
+- `index.html`: The final output of the template when the header variable `PDF_EXPORT` is set to `FALSE`. View it at [guangchuangyu.github.io/cv](http://guangchuangyu.github.io/cv).
+- `ygc.pdf`: The final exported pdf. 
+- `positions.csv`: A csv with columns encoding the various fields needed for a position entry in the CV. A column `section` is also available so different sections know which rows to use.
+- `profile.json` and `citation.json`: Citation stats from Google Scholar queried by [scholar](https://cran.r-project.org/package=scholar) package.
+- `citation.R`: Source code to generated `profile.json` and `citation.json`, as well as citation trend figure, `citation.png`.
 
 
+
+The source code was derived from <https://github.com/nstrayer/cv>, with modifications:
+
++ add `order` column in `positions.csv` to adjust item order.
++ remove `time` if it is identical to previous item.
++ add citation stats.
