@@ -195,25 +195,28 @@ Contact {#contact}
 - <i class="fa fa-weixin"></i> yt056410
 - <i class="fa fa-phone"></i> (86) 13372566428
 
-
-<br>
-<br>
 <br>
 
-LANGUAGE SKILLS
---------------------------------------------------------------------------------
+```{r}
+profile = jsonlite::fromJSON("profile.json")
+cites = jsonlite::fromJSON("citation.json")
+if (profile$total_cites < sum(cites$cites))
+  profile$total_cites <- sum(cites$cites)
+glue(
+"
++ Citation = {profile$total_cites}
++ H-index = {profile$h_index}
++ I10-index = {profile$i10_index}
+"
+  ) %>% print()
+```
 
-* R
-* Python
-* Bash
-* AWK
+
+![](citation.png)
+
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
-
-Made with [**pagedown**](https://github.com/rstudio/pagedown). 
-
-The source code is available at:\n[github.com/YTLogos/cv](https://github.com/YTLogos/cv).
 
 Last updated on `r Sys.Date()`.
 

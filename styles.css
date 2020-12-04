@@ -490,3 +490,10 @@ h1, h2{
 #links h2::after{ /* Remove decorator line from links section*/
   display: none;
 }
+
+[data-id="title"] {
+    text-align: justify;
+    font-family: Times;
+}
+
+

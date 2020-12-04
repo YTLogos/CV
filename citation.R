@@ -10,7 +10,7 @@ library(ggtree)
 #Sys.setenv(http_proxy="http://127.0.0.1:43723")
 
 
-id <- 'DO5oG40AAAAJ'
+id <- '8p3wQNwAAAAJ'
 
 profile <- tryCatch(get_profile(id), error = function(e) return(NULL))
 if (!is.null(profile)) {
@@ -42,22 +42,25 @@ cites <- fromJSON("citation.json")
 cites <- slice(cites, tail(row_number(), 6))
 cites$year <- factor(cites$year)
 
+theme_set(theme_get() + theme(text = element_text(family = 'Times New Roman')))
+
 p <- ggplot(cites, aes(cites, year)) + 
     geom_barh(stat='identity', fill = "#96B56C") + 
-    geom_text2(aes(label=cites, subset = cites > 500), hjust=1.1, size=5) + 
+    geom_text2(aes(label=cites, subset = cites > 1), hjust=1.1, size=2) + 
     labs(caption = "data from Google Scholar") +
     scale_x_continuous(position="top") +
-    theme_minimal(base_size=14) + xlab(NULL) + ylab(NULL) +
+    theme_minimal(base_size=10) + xlab(NULL) + ylab(NULL) +
     theme(panel.grid.major.y = element_blank(), 
           panel.grid.minor = element_blank(),
           panel.grid.major.x = element_line(linetype="dashed"),
-          plot.caption=element_text(colour='grey30')) +
+          plot.caption=element_text(colour='grey30', size=5)) +
     theme_transparent() 
 
-ggsave(p, file = "citation.png", width=3.5, height=4, bg = "transparent")
+ggsave(p, file = "citation.png", width=2, height=2, bg = "transparent")
 
 
 ## library(magick)
 ## p <- image_read("citation.png")
 ## p <- image_transparent(p, "white")
 ## image_write(p, path="citation.png")
+
