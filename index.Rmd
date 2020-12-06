@@ -177,11 +177,9 @@ Aside
 
 ![logo](taoyan.jpg){width=100%}
 
+
 ```{r}
-# When in export mode the little dots are unaligned, so fix that. 
-if(PDF_EXPORT){
-  cat("View this CV online with links at _taoyan.netlify.app/cv_")
-}
+cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://taoyan.netlify.app/pdf/CV.pdf)")
 ```
 
 Contact {#contact}
