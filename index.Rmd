@@ -212,7 +212,7 @@ glue(
 ```
 
 
-![](citation.png)
+[![](citation.png)](https://scholar.google.com/citations?hl=en&user=8p3wQNwAAAAJ)
 
 
 Disclaimer {#disclaimer}
@@ -230,7 +230,7 @@ Tao Yan(严涛) {#title}
 
 
 ```{r, results='asis'}
-intro_text <- glue("I am currently a PhD Student at College of Agriculture and Biotechnology, Zhejiang University (ZJU), Hangzhou, China, working with Prof. Lixi Jiang on Crop Genetics and Breeding. Research interests. My Ph.D research work covers a range of issues : Population Genetics Evolution and Ecotype Divergence Analysis of *Brassica napus*, Genome-wide Association Study (GWAS) of Agronomic Traits. Currently, I am interested in Transposable Elements Insertion Polymorphisms (TIPs) in Crop Population and genetic basis such as SV, CNV and TIPs etc shapes the diversity of different morphotypes of *B.napus*.")
+intro_text <- glue("I am currently a PhD Student at College of Agriculture and Biotechnology, Zhejiang University (ZJU), Hangzhou, China, working with Prof. Lixi Jiang on Crop Genetics and Breeding. Research interests. My Ph.D research work covers a range of issues : Population Genetics Evolution and Ecotype Divergence Analysis of *Brassica napus*, Genome-wide Association Study (GWAS) of Agronomic Traits. Currently, I am interested in Transposable Elements Insertion Polymorphisms (TIPs) in Crop Population and genetic basis such as SV, CNV and TIPs etc shapes the diversity of different morphotypes of *B. napus*.")
 
 cat(sanitize_links(intro_text))
 ```
