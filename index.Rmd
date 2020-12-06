@@ -189,9 +189,9 @@ Contact {#contact}
 
 
 - <i class="fa fa-envelope"></i> tyan@zju.edu.cn
-- <i class="fa fa-twitter"></i> [TaoYan](https://twitter.com/TaoYANLogos)
-- <i class="fa fa-github"></i> [github.com/YTLogos](https://github.com/YTLogos)
-- <i class="fa fa-link"></i> [taoyan.netlify.app](https://taoyan.netlify.app/)
+- <i class="fa fa-twitter"></i> <a href="https://twitter.com/TaoYANLogos" target="_blank">TaoYan</a>
+- <i class="fa fa-github"></i> <a href="https://github.com/YTLogos" target="_blank">github.com/YTLogos</a>
+- <i class="fa fa-link"></i> <a href="https://taoyan.netlify.app/" target="_blank">taoyan.netlify.app</a>
 - <i class="fa fa-weixin"></i> yt056410
 - <i class="fa fa-phone"></i> (86) 13372566428
 
@@ -212,8 +212,9 @@ glue(
 ```
 
 
-[![](citation.png)](https://scholar.google.com/citations?hl=en&user=8p3wQNwAAAAJ)
+<!-- [![](citation.png)](https://scholar.google.com/citations?hl=en&user=8p3wQNwAAAAJ) -->
 
+<a href="https://scholar.google.com/citations?hl=en&user=8p3wQNwAAAAJ" target="_blank"><img src="citation.png" /></a>
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
