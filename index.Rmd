@@ -178,9 +178,9 @@ Aside
 ![logo](taoyan.jpg){width=100%}
 
 
-```{r}
-cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://taoyan.netlify.app/pdf/CV.pdf)")
-```
+
+<a href="https://taoyan.netlify.app/pdf/CV.pdf" target="_blank"><i class='fas fa-download'></i> Download a PDF of this CV</a>
+
 
 Contact {#contact}
 --------------------------------------------------------------------------------
