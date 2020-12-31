@@ -214,8 +214,9 @@ glue(
 
 <a href="https://scholar.google.com/citations?hl=en&user=8p3wQNwAAAAJ" target="_blank"><img src="citation.png" /></a>
 
-Disclaimer {#disclaimer}
---------------------------------------------------------------------------------
+
+<!-- Disclaimer {#disclaimer} -->
+<!-- -------------------------------------------------------------------------------- -->
 
 Last updated on `r Sys.Date()`.
 

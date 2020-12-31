@@ -53,7 +53,7 @@ p <- ggplot(cites, aes(cites, year)) +
     theme(panel.grid.major.y = element_blank(), 
           panel.grid.minor = element_blank(),
           panel.grid.major.x = element_line(linetype="dashed"),
-          plot.caption=element_text(colour='grey30', size=5)) +
+          plot.caption=element_text(colour='grey30', size=5, vjust = 1)) +
     theme_transparent() 
 
 ggsave(p, file = "citation.png", width=2, height=2, bg = "transparent")
