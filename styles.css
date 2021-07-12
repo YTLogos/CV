@@ -496,4 +496,7 @@ h1, h2{
     font-family: Times;
 }
 
+[data-id="main"] {
+  font-size: 1rem;
+}
 
