@@ -2,11 +2,11 @@
 title: "Tao Yan's Resume"
 author: Tao Yan
 date: "`r Sys.Date()`"
-params:
-  pdf_mode:
-    value: true
-  cache_data:
-    value: true
+# params:
+#   pdf_mode:
+#     value: true
+#   cache_data:
+#     value: true
 output:
   pagedown::html_resume:
     css: ['styles.css']
