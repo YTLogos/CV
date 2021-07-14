@@ -494,9 +494,7 @@ h1, h2{
 [data-id="title"] {
     text-align: justify;
     font-family: Times;
+    font-size: 1.1rem;
 }
 
-[data-id="main"] {
-  font-size: 1rem;
-}
 
