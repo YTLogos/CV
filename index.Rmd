@@ -230,7 +230,7 @@ Tao Yan(严涛) {#title}
 
 
 ```{r, results='asis'}
-intro_text <- glue("Lecturer at College of Agronomy, Hunan Agricultural University (HUAU), Changsha, China. My Ph.D research work covers a range of issues: Population Genetics Evolution and Ecotype Divergence Analysis of *Brassica napus*, Genome-wide Association Study (GWAS) of Agronomic Traits. Currently, I am interested in Transposable Elements Insertion Polymorphisms (TIPs) in Crop Population and genetic basis such as SV, CNV and TIPs etc. Now my research focus on Crop Stress and Improvement.")
+intro_text <- glue("Lecturer at College of Agronomy, Hunan Agricultural University (HUNAU), Changsha, China. My Ph.D research work covers a range of issues: Population Genetics Evolution and Ecotype Divergence Analysis of *Brassica napus*, Genome-wide Association Study (GWAS) of Agronomic Traits. Currently, I am interested in Transposable Elements Insertion Polymorphisms (TIPs) in Crop Population and genetic basis such as SV, CNV and TIPs etc. Now my research focus on Crop Stress and Improvement.")
 
 cat(sanitize_links(intro_text))
 ```
