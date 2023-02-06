@@ -7,5 +7,5 @@ rmarkdown::render("index.rmd",
 # Convert to PDF using Pagedown
 pagedown::chrome_print(input = tmp_html_cv_loc,
                        output = "taoyan_cv.pdf",
-                       browser = "D://software/Google/Chrome/Application/chrome.exe")
+                       browser = "C:/Program Files/Google/Chrome/Application/chrome.exe")
 
