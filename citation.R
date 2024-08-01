@@ -5,7 +5,10 @@ library(ggplot2)
 library(ggstance)
 library(ggimage)
 library(ggtree)
+library(extrafont)
+loadfonts(device = "win")
 
+theme_set(theme_get() + theme(text = element_text(family = 'Times New Roman')))
 
 #Sys.setenv(http_proxy="http://127.0.0.1:43723")
 
@@ -42,7 +45,6 @@ cites <- fromJSON("citation.json")
 cites <- slice(cites, tail(row_number(), 6))
 cites$year <- factor(cites$year)
 
-theme_set(theme_get() + theme(text = element_text(family = 'Times New Roman')))
 
 p <- ggplot(cites, aes(cites, year)) + 
     geom_barh(stat='identity', fill = "#96B56C") + 
